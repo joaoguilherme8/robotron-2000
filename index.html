@@ -100,6 +100,24 @@
             </form>
         </section>
     </main>
-    <script src="js/script.js"></script>
+    <script src="js/script.js">
+        let array = ["./img/robotron-amarelo.png", "./img/robotron-azul.png", "./img/robotron-branco.png", "./img/robotron-preto.png","./img/robotron-rosa.png", "./img/robotron-vermelho.png", "./img/robotron.png" ]
+let posicao = 0
+function proximo(){
+    if(posicao < array.length - 1){
+        posicao++;
+    }
+    document.querySelector(".robo").src = array[posicao]
+    let valor = document.querySelector(".estatistica-numero")
+    valor.textContent = "1000"
+}
+ function anterior(){
+    if(posicao>0){
+        posicao--;
+
+    }
+    document.querySelector(".robo").src = array[posicao]
+ }
+    </script>
 </body>
 </html>

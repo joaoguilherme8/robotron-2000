@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,7 +54,7 @@
                         <div class="controle">
                             <buttom class="controle-ajuste">-</buttom>
                             <input type="text" class="controle-contador" value="00">
-                            <buttom class="controle-ajuste">+</buttom>
+                            <buttom onclick="muda" class="controle-ajuste">+</buttom>
                         </div>
                     </div>
                     <hr class="linha">
@@ -94,9 +94,12 @@
                         </div>
                     </div>
                 </div>
-                <input type="submit" value="Iniciar produção" class="producao" id="producao">
+                <input type="button" value="Iniciar produção" class="producao" id="producao">
+                <button onclick="proximo()" class="producao">proximo</button>
+                <button onclick="anterior()" class="producao">anterior</button>
             </form>
         </section>
     </main>
+    <script src="js/script.js"></script>
 </body>
 </html>
